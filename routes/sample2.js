@@ -15,5 +15,5 @@ router.put('/:id', sample2Controller.updateSample2);
 
 router.delete('/:id', sample2Controller.deleteSample2);
 
-// localhost:8080/contacts/
+// localhost:3001/contacts/
 module.exports = router;

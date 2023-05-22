@@ -5,7 +5,7 @@ const mongodb = require('./db/connect');
 const sample1Routes = require('./routes/sample1');
 const sample2Routes = require('./routes/sample2');
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3001;
 const app = express();
 
 app

@@ -1,7 +1,7 @@
 ###
-GET http://localhost:8080/SampleData1
+GET http://localhost:3001/SampleData1
 ###
-POST http://localhost:8080/SampleData1 HTTP/1.1
+POST http://localhost:3001/SampleData1 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -11,9 +11,9 @@ Content-Type: application/json
     "s1item4": "soil"
 }
 ###
-GET http://localhost:8080/SampleData2
+GET http://localhost:3001/SampleData2
 ###
-POST http://localhost:8080/SampleData2 HTTP/1.1
+POST http://localhost:3001/SampleData2 HTTP/1.1
 Content-Type: application/json
 
 {
