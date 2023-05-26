@@ -1,6 +1,6 @@
 const validator = require('../helpers/validate');
 
-const saveContact = (req, res, next) => {
+const saveSample = (req, res, next) => {
     const validationRule = {
         "s1item1": 'required|string',
         "s1item2": 'required|string',
@@ -21,5 +21,5 @@ const saveContact = (req, res, next) => {
 };
 
 module.exports = {
-    saveContact
+    saveSample
 };
