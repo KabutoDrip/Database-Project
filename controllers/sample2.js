@@ -33,14 +33,17 @@ const getSingle = async (req, res) => {
 
 const createSample2 = async (req, res) => {
   try{
-    if(!req.body.item1 || !req.body.item2 ){
+    if(!req.body.item1 || !req.body.item2 || !req.body.item3 || !req.body.item4 || !req.body.item5 || !req.body.item6 || !req.body.item7){
       throw new Error("Please fill out all fields")
     }
   const sample = {
-    s2item2: req.body.item1,
-    s2item2: req.body.item2,
-    s2item3: req.body.item3,
-    s2item4: req.body.item4
+    item2: req.body.item1,
+    item2: req.body.item2,
+    item3: req.body.item3,
+    item4: req.body.item4,
+    item5: req.body.item5,
+    item6: req.body.item6,
+    item7: req.body.item7
   };
   const response = await mongodb.getDb().db('CSE-341-Database').collection('SampleData2').insertOne(sample);
   if (response.acknowledged) {
@@ -61,14 +64,17 @@ const updateSample2 = async (req, res) => {
   if(!userId){
     throw new Error("Please Enter a valid ID")
   }
-  if(!req.body.item1 || !req.body.item2 ){
+  if(!req.body.item1 || !req.body.item2 || !req.body.item3 || !req.body.item4 || !req.body.item5 || !req.body.item6 || !req.body.item7){
     throw new Error("Please fill out all fields")
   }
   const sample = {
-    s2item1: req.body.item1,
-    s2item2: req.body.item2,
-    s2item3: req.body.item3,
-    s2item4: req.body.item4
+    item2: req.body.item1,
+    item2: req.body.item2,
+    item3: req.body.item3,
+    item4: req.body.item4,
+    item5: req.body.item5,
+    item6: req.body.item6,
+    item7: req.body.item7
   };
   const response = await mongodb
     .getDb()
