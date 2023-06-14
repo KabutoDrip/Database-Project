@@ -5,10 +5,10 @@
     "description": "Project API",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "cse341-cbjm.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
@@ -197,6 +197,15 @@
                 },
                 "item4": {
                   "example": "any"
+                },
+                "item5": {
+                  "example": "any"
+                },
+                "item6": {
+                  "example": "any"
+                },
+                "item7": {
+                  "example": "any"
                 }
               }
             }
@@ -205,6 +214,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -229,6 +241,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -258,6 +273,15 @@
                 },
                 "item4": {
                   "example": "any"
+                },
+                "item5": {
+                  "example": "any"
+                },
+                "item6": {
+                  "example": "any"
+                },
+                "item7": {
+                  "example": "any"
                 }
               }
             }
@@ -266,6 +290,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -285,6 +312,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"

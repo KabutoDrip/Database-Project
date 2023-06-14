@@ -65,10 +65,10 @@ const updateSample1 = async (req, res) => {
   }
   // be aware of updateOne if you only want to update specific fields
   const sample = {
-    s1item1: req.body.item1,
-    s1item2: req.body.item2,
-    s1item3: req.body.item3,
-    s1item4: req.body.item4
+    item1: req.body.item1,
+    item2: req.body.item2,
+    item3: req.body.item3,
+    item4: req.body.item4
   };
   const response = await mongodb
     .getDb()
